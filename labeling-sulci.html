@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meena Mani - Labeling Sulci</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meena Mani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- header section start -->
+    <header class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-3">
+                    <div class="logo">
+                        <h2 class="site-logo">Labeling Sulci</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-9">
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="phd-thesis.html">PhD Thesis</a>
+                                    <a class="dropdown-item" href="master-thesis.html">Master's Thesis</a>
+                                    <a class="dropdown-item" href="analysis-white-matter-tracts.html">Analysis
+                                        of White Matter Tracts</a>
+                                    <a class="dropdown-item" href="labeling-sulci.html">Labeling Sulci</a>
+                                    <a class="dropdown-item" href="master-thesis.html">Genetics of
+                                        Brain Structure</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-2" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Connect
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink-2">
+                                    <a class="dropdown-item" href="http://brainstat.blogspot.com/">Blog 
+                                        <span class="fa fa-rss"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="https://www.quora.com/profile/Meena-Mani">Quora 
+                                        <span class="fab fa-quora"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="notes.html">Notes
+                                        <span class="fa fa-sticky-note"></span>
+                                    </a>
+                                    <a class="dropdown-item"
+                                        href="http://www.linkedin.com/pub/meena-mani/22/ab4/703">Linkedin 
+                                        <span class="fab fa-linkedin-square"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="https://github.com/Meena-Mani">Github 
+                                        <span  class="fab fa-github"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="https://twitter.com/meena_uvaca">Twitter 
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                   
+                                    <a class="dropdown-item" href="https://www.kaggle.com/shir0mani">Kaggle 
+                                        <span class="fab fa-kaggle"></span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <!-- header section end -->
+
+    
+        <!-- page section start -->
+        <section class="page-section jumbotron">
+            <div class="container ">
+                <div class="row pt-4 pb-4 ">
+
+                    <div class="col-lg-9 col-lg-pull-3 article-color pt-4">
+
+                        <h4 class="text-center" style="color: #330099;"> Labeling cortical sulci </h4> <br>
+                        <p>
+                            Sulci are fissures or grooves on the cortical surface. They serve as orientating landmarks
+                            and also allow the neurosurgeon access to different parts of the brain. The major sulci
+                            partition important functional areas.
+                            <br> <br>
+                            Cortical sulci are highly variable. They vary in their physical description (shape, scale,
+                            placement), in branching morphology and in their number. Sulci vary not just across
+                            individuals but even between the hemispheres of a single brain. As much as we need a a
+                            reliable automated labeling scheme to identify and label the sulci this variability poses a
+                            challenge.</p>
+
+                        <br>
+
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-lg-3 col-lg-push-9">
+                    </div>
+                    <div class="col-lg-9 col-lg-pull-3 article-color pt-4">
+
+                        <h4 class="text-center" style="color: #330099;"> Labeling with multidimensional scaling </h4> <br>
+                        <p>
+                            Multidimensional scaling (MDS) gives a physical map with which we can reproduce the
+                            structural relationships between sulci in an embedded space. Unlabeled sulci, projected into
+                            the same space using an out-of-sample procedure, are given class designations based on
+                            nearest neighbor (NN) search. In experiments using a leave-one-out strategy, 90% of the 180
+                            sulci drawn from 10 sulcal classes are successfully classified as are data from 5 out of 6
+                            patients with cortical tumors.
+                            <br><br>
+                            With this supervised learning scheme, we offer a simple and intuitive solution to a
+                            challenging problem. The use of relational matching gives us the flexibility to accommodate
+                            normal variation in the sulci.
+                            <br><br>
+                            <strong>Publications </strong> <br><br>
+                            Mani, M., Srivastava, A., Barillot, C. <span style="font-style:italic;">The Labeling of Cortical Sulci using Multidimensional
+                            Scaling</span> , MICCAI Workshop on Manifold Learning in Medical Imaging (MMI 2008), New York City,
+                            USA, September 2008. <br>
+                            [ <a class="links-color" href="project-pdf/mmi08.pdf">Full paper</a> ]
+                            [ <a class="links-color" href="mmi08_bib.html">BibTex</a> ]
+                            [ <a class="links-color" href="project-pdf/mmi08_presentation.pdf">Slides (pdf, 2.6M)</a> ]
+                            [ <a class="links-color" href="project-pdf/mlss09_chicago.pdf">Poster</a> ]<br><br>
+                            Mani, M., <span style="font-style:italic;">Supervised Labeling of Brain Sulci Using Multidimensional 
+                                Scaling.</span><br>
+                            [ <a class="links-color" href="project-pdf/sulcus_journal.pdf">Full paper</a> ] 
+                            [ <a class="links-color" href="mmi08_bib.html">BibTex</a> ]</p>
+
+                        <br>
+
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-lg-3 col-lg-push-9">
+                    </div>
+                    <div class="col-lg-3 col-lg-pull-3 article-color pb-4">
+                        <img src="img/project-images/brain_sulci_graph_3.jpg" alt="" style="border: 1px solid;">
+                    </div>
+                    <div class="col-lg-3 col-lg-pull-3 article-color pb-4"></div>
+                    <div class="col-lg-3 col-lg-pull-3 article-color pb-4">
+                        <img src="img/project-images/brain_sulci_graph_4.jpg" alt="" style="border: 1px solid;">
+                    </div>
+                </div>
+
+                <div class="row pt-4 pb-4 article-color ">
+                    <div class="col-lg-6 pt-4">
+                        <h4 class="text-center" style="color: #330099;"> Labeling sulci of tumor subjects</h4> <br>
+                        <p>The algorithm was tested on data from 6 subjects with medium to large tumors. The lesions
+                            had displaced sulci or had otherwise altered the arrangement of the surrounding cortical
+                            tissue. The sulci in the unaffected regions were successfully labeled, i.e. they had the
+                            same error rate as for the healthy subjects. The value in our method lies in the fact that
+                            we were able to classify sulci in the region surrounding the tumor in 5 out of 6 cases as
+                            well.<br><br>
+                            The preliminary success with labeling tumor datasets suggests that we can design a
+                            general-purpose tool to identify both normal and pathological sulcal data.</p>
+                        <br>
+                    </div>
+                    <div class="col-md-3">
+                        <img height="250px" width="250px" src="img/project-images/3_tumor_subject1_2.jpg" alt="" style="border: 1px solid;">
+                        <img height="250px" width="250px" src="img/project-images/3_tumor_subject9_2.jpg" alt="" style="border: 1px solid;">
+                    </div>
+                    <div class="col-md-3">
+                        <img height="250px" width="250px"
+                            src="img/project-images/confusion_tumor_subject1_2_nolegend.jpg" alt="" style="border: 1px solid;">
+                        <img height="250px" width="250px"
+                            src="img/project-images/confusion_tumor_subject9_4_nolegend.jpg" alt="" style="border: 1px solid;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- page section end -->
+
+    <!-- footer section start -->
+    <footer class="footer-section text-center">
+		<div class="container-fluid">
+			<div class="copyright">
+                © 2013 - 2020 Meena Mani
+			</div>
+		</div>
+	</footer>
+    <!-- footer section end -->
+
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
