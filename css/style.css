@@ -792,6 +792,8 @@ ol {
 .site-logo-new{
   font-family: 'Faster One', cursive;
   color:#dd8d00;
+  font-size: 50px;
+    padding-top: 40px;
 }
 .bibtex{
   display: block;
@@ -799,4 +801,7 @@ ol {
   white-space: pre;
   margin: 1em 0px;
   font-size: large;
+}
+.dropdown-menu {
+border: none;
 }
