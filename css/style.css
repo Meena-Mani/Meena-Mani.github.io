@@ -802,6 +802,12 @@ ol {
   margin: 1em 0px;
   font-size: large;
 }
-.dropdown-menu {
-border: none;
+.dropdown-menu a{
+  border: none;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.main-menu a:hover{
+  background-color: #EEEEEE !important;
 }
